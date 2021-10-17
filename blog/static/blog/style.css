@@ -1,0 +1,36 @@
+body{
+    background: maroon;
+    color: white;
+}
+
+form{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+#city-input{
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+#form-button{
+    background-color: #6676c6;
+    padding: 3px 10px;
+    color: white;
+    border-radius: 10px;
+}
+.text-center{
+    text-align: center;
+}
+.weather-card{
+    width: 50%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: rgb(54, 119, 40);
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link href="{% static 'blog/style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1 class="text-center">Type here to see your city's weather</h1>
+
+<form action="{% url 'search' %}" method="GET">
+    <div>
+        <div>
+            <input id="city-input" type="text" name="city" placeholder="type a city"/>
+        </div>
+        <br>
+        <div>
+            <input id="form-button" type="submit" value="Search"/>
+        </div>
+    </div>
+
+</form>
+
+<div class="weather-card">
+    <img src="{{image_icon}}"/>
+    <h3>{{ data.name }}</h3>
+    <p>{{ description }}</p>
+    <p>{{ data.main.temp}}</p>
+     <p>{{ data.main.humidity }}</p>
+</div>
+
+
+</body>
+</html>
